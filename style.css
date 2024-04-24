@@ -1,9 +1,26 @@
 body{
     background-color:#dcf3fa;
-    min-height: 100%;
+    color: #004a61;
     font-family:sans-serif;
     font-size: 1rem;
+    width: 80%;
+    text-align: center;
+}
+.intro{
+    height: 550px;
+}
+#design-archives{
+    display: none;
+}
 
+header{
+    background: darkcyan;
+    color:#dcf3fa;
+    padding: 1em;
+
+}
+h1, h2, h3{
+    text-align: center;
 }
 p{
     text-indent: 1rem;
@@ -12,18 +29,19 @@ p{
 
 h1{
     font-size: 1.8rem;
-    text-align: center;
+    padding: 1em;
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
 }
 
 h2{
     font-size: 1.4rem;
-    text-align: left;
-
+    display: inline-block;
 }
 
 h3{
     font-size: 1.2rem;
-    text-align: left;
 }
 .summary{
     text-align: center;
@@ -32,4 +50,35 @@ h3{
 
 abbr{
     font-variant: small-caps;
+}
+
+
+.page-wrapper{
+    position: relative;
+
+}
+.explanation{
+    width: 60%;
+    margin-right: 35%;
+    padding-right: 2%;
+    border-right: 1px solid #1f295c;
+}
+footer > a{
+    margin: 4% 0;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0.5em;
+}
+.sidebar ul{
+    list-style-type: none;
+}
+.sidebar li{
+    margin-bottom: 1em;
+    text-align: center;
+}
+.design-selection{
+    position: absolute;
+    top: 420px;
+    left: 62%;
+    padding: 2%;
 }
