@@ -82,3 +82,94 @@ footer > a{
     left: 62%;
     padding: 2%;
 }
+a {
+    font-weight: bold;
+    color: blue; 
+    text-decoration: none;
+  }
+
+a:hover{
+    color: #89bece;
+}
+a:visited{
+    font-weight: normal;
+}
+
+.main p:first-of-type:first-letter {
+    font-size: 2em;
+    float: left; 
+    font-family: Arial, sans-serif;
+  }
+
+  .design-selection{
+    border-top: 1px solid black; 
+  }
+  
+  .design-selection:last-child {
+    border-bottom: 1px solid #116063;
+  }
+  /* Estilo para o menu de design */
+.design-selection nav ul,
+.design-archives nav ul,
+.zen-resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.design-selection nav ul li,
+.design-archives nav ul li,
+.zen-resources ul li {
+    border-top: 1px solid #ccc; /* Adiciona borda superior a todos os itens */
+}
+
+.design-selection nav ul li:last-child,
+.design-archives nav ul li:last-child,
+.zen-resources ul li:last-child {
+    border-bottom: 1px solid #ccc; 
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    flex:1;
+    text-align: center;
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #0a645d;
+}
+
+.benefits h3{
+    display:flex;
+    flex-direction: column;
+    flex-basis:30%;
+    text-align: right;
+}
+.benefits p{
+    flex-basis: 70%;
+}
+.benefits {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #004a61;
+    border-bottom: 1px solid #004a61;
+}
+
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #004a61;
+    border-bottom: 1px solid #004a61;
+}
+.participation h3{
+    text-align: center;
+    width: 100%;
+}
+.participation p{
+    width: 50%;
+}
+.participation + .benefits{
+   border-top: none;
+}
+
