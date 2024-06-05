@@ -145,7 +145,8 @@ footer a{
 }
 .benefits {
     display: flex;
-    align-items: center;
+    flex-direction: row-reverse;
+    /*align-items: center;*/
     border-top: 1px solid #004a61;
     border-bottom: 1px solid #004a61;
 }
@@ -153,7 +154,7 @@ footer a{
 
     margin-right: 1em;
     flex-basis: 30%;
-    text-align: center;
+    align-self: center;
 }
 .benefits p{
     flex-basis: 70%;
@@ -163,11 +164,11 @@ footer a{
     flex-wrap: wrap;
     border-top: 1px solid #004a61;
     border-bottom: 1px solid #004a61;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-evenly;
 }
 .participation h3{
-    text-align: center;
+    align-self: center;
     flex-basis: 50%;
 }
 .participation p{
@@ -175,16 +176,31 @@ footer a{
 }
 
 
-/*@media screen and (max-width: 800px) {
-    p { 
-        font-size: 18px; 
-        background-color: aqua;
-        display: block; /*ocupa toda largura da pagina*/
-    /*}}
+@media only screen and (min-width: 768px) {
+    .design-selection{ 
+       border-right: none;
+    }
+    .explanation{
+        display: none;
+    }
+    .participation{
+        display: flex;
+        flex-direction: column; /*muda para vertical a orientação*/
+    }
+    .p{
+        text-indent: none;
+        font-size: none;
+
+    }
+    .intro{
+        height: auto;
+    }
+}
+
 @media print{ /*imagens */
-/*img{
-    display: none; /*some da pagina*/
-/*}}
+
+        /*display: block; /*ocupa toda largura da pagina*/
+}
 
 
 
