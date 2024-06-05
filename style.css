@@ -1,0 +1,206 @@
+body{
+    background-color:#dcf3fa;
+    color: #004a61;
+    font-family:sans-serif;
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+    padding: 0 20px;
+    line-height:1.5;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.intro{
+    height: 550px;
+}
+#design-archives{
+    display: none;
+}
+
+header{
+    background: darkcyan;
+    color:#dcf3fa;
+    padding: 1em;
+
+}
+h1, h2, h3{
+    text-align: center;
+}
+p{
+    text-indent: 1rem;
+    color: #004a61;
+}
+
+h1{
+    font-size: 1.8rem;
+    padding: 1em;
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+
+h2{
+    font-size: 1.4rem;
+    display: inline-block;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+.summary{
+    text-align: center;
+    font-size: 1em; line-height: 1.5em;
+}
+
+abbr{
+    font-variant: small-caps;
+}
+.main p{
+    line-height: 1.5;
+}
+
+.page-wrapper{
+    position: relative;
+
+}
+.explanation{
+    width: 60%;
+    margin-right: 35%;
+    padding-right: 2%;
+    border-right: 1px solid #1f295c;
+}
+.sidebar ul{
+    list-style-type: none;
+}
+.sidebar li{
+    margin-bottom: 1em;
+    text-align: center;
+}
+.design-selection{
+    position: static;
+    top: 420px;
+    left: 62%;
+    padding: 2%;
+}
+a {
+    font-weight: bold;
+    color: blue; 
+    text-decoration: none;
+  }
+
+a:hover{
+    color: #89bece;
+}
+a:visited{
+    font-weight: normal;
+}
+
+.main p:first-of-type:first-letter {
+    font-size: 2em;
+    float: left; 
+    font-family: Arial, sans-serif;
+  }
+
+  .design-selection{
+    border-top: 1px solid black; 
+  }
+  
+  .design-selection:last-child {
+    border-bottom: 1px solid #116063;
+  }
+  /* Estilo para o menu de design */
+.design-selection nav ul,
+.design-archives nav ul,
+.zen-resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.design-selection nav ul li,
+.design-archives nav ul li,
+.zen-resources ul li {
+    border-top: 1px solid #ccc; /* Adiciona borda superior a todos os itens */
+}
+
+.design-selection nav ul li:last-child,
+.design-archives nav ul li:last-child,
+.zen-resources ul li:last-child {
+    border-bottom: 1px solid #ccc; 
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004a61;
+    color: #dcf3fa;
+    padding: 4% 0;
+}
+footer a{
+    flex:1;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0 5px;
+    border: 2px solid #0a645d;
+    display: inline-block;
+}
+.benefits {
+    display: flex;
+    flex-direction: row-reverse;
+    /*align-items: center;*/
+    border-top: 1px solid #004a61;
+    border-bottom: 1px solid #004a61;
+}
+.benefits h3{
+
+    margin-right: 1em;
+    flex-basis: 30%;
+    align-self: center;
+}
+.benefits p{
+    flex-basis: 70%;
+}
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #004a61;
+    border-bottom: 1px solid #004a61;
+    /*align-items: center;*/
+    justify-content: space-evenly;
+}
+.participation h3{
+    align-self: center;
+    flex-basis: 50%;
+}
+.participation p{
+   flex-basis: 50%;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .design-selection{ 
+       border-right: none;
+    }
+    .explanation{
+        display: none;
+    }
+    .participation{
+        display: flex;
+        flex-direction: column; /*muda para vertical a orientação*/
+    }
+    .p{
+        text-indent: none;
+        font-size: none;
+
+    }
+    .intro{
+        height: auto;
+    }
+}
+
+@media print{ /*imagens */
+
+        /*display: block; /*ocupa toda largura da pagina*/
+}
+
+
+
